@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your To-Do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="banner">
+    <h1><i class="fa-solid fa-clipboard-list"></i> Your Personal To-Do List</h1>
+  </div>
+
+  <div class="container">
+    <div class="theme-toggle">
+      <button id="theme-btn"><i class="fa-solid fa-moon"></i></button>
+    </div>
+
+    <form class="add-task">
+      <input type="text" id="task-input" placeholder="What's on your mind?">
+      <button type="submit"><i class="fa-solid fa-plus"></i> Add</button>
+    </form>
+
+    <ul id="task-list"></ul>
+
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">To-do</button>
+      <button data-filter="completed">Done</button>
+    </div>
+
+    <div class="footer">
+      <span id="task-count">0 tasks left</span>
+      <button class="clear-completed"><i class="fa-solid fa-trash-can"></i> Clear Completed</button>
+    </div>
+  </div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
